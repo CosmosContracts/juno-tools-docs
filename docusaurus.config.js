@@ -6,18 +6,17 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'DAO DAO',
-  tagline: 'DAOs for everyone',
-  url: 'https://docs.daodao.zone',
-  organizationName: 'DA0-DA0', // Github org name
-  projectName: 'docs', // Usually your repo name.
+  title: 'JunoTools',
+  tagline: 'Swiss Knife of Juno Network',
+  url: 'https://docs.juno.tools',
+  organizationName: 'deus-labs', // Github org name
+  projectName: 'junotools-docs', // Usually your repo name.
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'DA0-DA0', // Usually your GitHub org/user name.
   stylesheets: [
     'https://fonts.googleapis.com/css2?family=Inter:wght@500;600,'
   ],
@@ -28,7 +27,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/DA0-DA0/docs/tree/main/',
+          editUrl: 'https://github.com/deus-labs/junotools/docs/tree/main/',
         },
         // blog: {
         //   showReadingTime: true,
@@ -61,9 +60,9 @@ const config = {
       navbar: {
         title: '',
         logo: {
-          alt: 'DAO DAO Logo',
-          src: 'img/daodao-dark.png',
-          srcDark: 'img/daodao-light.png',
+          alt: 'JunoTools Logo',
+          src: 'img/junotools-dark.png',
+          srcDark: 'img/junotools-light.png',
         },
         items: [
           {
@@ -84,7 +83,7 @@ const config = {
           //   position: 'left'
           // },
           {
-            href: 'https://daodao.zone/',
+            href: 'https://juno.tools/',
             label: 'Launch the app!',
             position: 'right',
           },
@@ -107,7 +106,7 @@ const config = {
             items: [
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/DA0_DA0',
+                href: 'https://twitter.com/JunoTools',
               },
             ],
           },
@@ -120,12 +119,12 @@ const config = {
               // },
               {
                 label: 'GitHub',
-                href: 'https://github.com/DA0-DA0/docs',
+                href: 'https://github.com/deus-labs/junotools-docs',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} DAO DAO. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} JunoTools. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
@@ -133,7 +132,5 @@ const config = {
       },
     }),
 };
-
-
 
 module.exports = config;

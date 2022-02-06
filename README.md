@@ -1,11 +1,10 @@
-# DAO DAO docs
+# JunoTools docs
 
 This website is built using [Docusaurus 2](https://docusaurus.io/).
 
 ## Contributing
 
-Interested in contributing to DAO DAO? Check out [CONTRIBUTING.md](./CONTRIBUTING.md).
-
+Interested in contributing to JunoTools Check out [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ### Installation
 

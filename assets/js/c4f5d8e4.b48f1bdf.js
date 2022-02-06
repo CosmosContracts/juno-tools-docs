@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjunotools_docs=self.webpackChunkjunotools_docs||[]).push([[195],{2841:function(n,o,t){t.r(o),t.d(o,{default:function(){return c}});var u=t(7294),e=t(6775);function c(){return u.createElement(e.l_,{to:"/docs/introduction"})}}}]);

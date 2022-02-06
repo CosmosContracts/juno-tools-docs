@@ -15,5 +15,5 @@ We call these front end apps as **Smart Contact Dashboard** or **sc dashboard** 
 
 With upcoming v1 release, we will provide:
 - New UI/UX similar to [daodao.zone](https://daodao.zone)
-- [Pinned Codes](/pinned-codes): 40x performance boost
+- [Pinned Codes](/pinned-codes): 40x performance boost on smart contracts instantiated using JunoTools, [more read]()
 

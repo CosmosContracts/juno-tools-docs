@@ -49,13 +49,13 @@ const config = {
       announcementBar: {
         id: 'try_it_out',
         content:
-        'Try out <a target="_blank" rel="noopener noreferrer" href="https://daodao.zone"> JunoTools</a>!',
+        'Try out <a target="_blank" rel="noopener noreferrer" href="https://juno.tools"> JunoTools</a>!',
         // backgroundColor: '#000',
         // textColor: '#fff',
         isCloseable: true,
       },
       navbar: {
-        title: '',
+        title: 'JunoTools',
         logo: {
           alt: 'JunoTools Logo',
           src: 'img/junotools-dark.png',

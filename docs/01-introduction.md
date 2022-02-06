@@ -9,7 +9,7 @@ We call these front end apps as **Smart Contact Dashboard** or **sc dashboard** 
 
 ## Available Smart Contract Dashboards
 
-- [Airdrop](/dashboards/airdrop)
+- [Airdrop](/02-dashboards/02-airdrop/01-introduction.md)
 
 ## v1 Release
 
@@ -17,5 +17,5 @@ With upcoming v1 release, we will provide:
 
 - New UI/UX feels like [daodao.zone](https://daodao.zone)
 - New Smart Contract Dashboards: CW20 (base, bonding, staking) and CW1(subkeys) and maybe more...
-- [Pinned Codes](/pinned-codes): 40x performance boost on smart contracts instantiated using JunoTools,
+- [Pinned Codes](pinned-codes): 40x performance boost on smart contracts instantiated using JunoTools,
  [more read](https://docs.cosmwasm.com/docs/smart-contracts/components/code-pinning)

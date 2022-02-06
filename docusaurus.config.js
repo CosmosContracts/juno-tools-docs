@@ -45,14 +45,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // meta image https://docusaurus.io/docs/api/themes/configuration#meta-image
       image: 'img/banner.jpeg',
-      // announcement bar
-      // https://docusaurus.io/docs/api/themes/configuration#announcement-bar
       announcementBar: {
         id: 'try_it_out',
         content:
-        'Try out DAO DAO! <a target="_blank" rel="noopener noreferrer" href="https://daodao.zone">Launch a DAO on Juno</a>.',
+        'Try out JunoTools! <a target="_blank" rel="noopener noreferrer" href="https://daodao.zone">Launch a DAO on Juno</a>.',
         // backgroundColor: '#000',
         // textColor: '#fff',
         isCloseable: true,
@@ -67,21 +64,10 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'introduction/welcome-to-dao-dao',
+            docId: 'introduction',
             position: 'left',
             label: 'Docs',
           },
-          {
-            type: 'doc',
-            docId: 'quickstart/create-a-dao',
-            position: 'left',
-            label: 'Quickstart',
-          },
-          // {
-          //   to: '/blog',
-          //   label: 'Blog',
-          //   position: 'left'
-          // },
           {
             href: 'https://juno.tools/',
             label: 'Launch the app!',

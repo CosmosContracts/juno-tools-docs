@@ -8,5 +8,5 @@ import HomepageFeatures from '../components/HomepageFeatures';
 import {Redirect} from '@docusaurus/router';
 
 export default function Home() {
-  return <Redirect to="/docs/introduction/welcome-to-dao-dao" />;
+  return <Redirect to="/docs/introduction" />;
 }

@@ -58,8 +58,8 @@ const config = {
         title: 'JunoTools',
         logo: {
           alt: 'JunoTools Logo',
-          src: 'img/junotools-dark.png',
-          srcDark: 'img/junotools-light.png',
+          src: 'img/logo.png',
+          srcDark: 'img/logo.png',
         },
         items: [
           {

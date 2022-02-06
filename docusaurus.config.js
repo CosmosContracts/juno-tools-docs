@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'JunoTools',
-  tagline: 'Swiss Knife of Juno Network',
+  tagline: 'Multi-tool of Juno Network',
   url: 'https://docs.juno.tools',
   organizationName: 'deus-labs', // Github org name
   projectName: 'junotools-docs', // Usually your repo name.

@@ -49,7 +49,7 @@ const config = {
       announcementBar: {
         id: 'try_it_out',
         content:
-        'Try out JunoTools! <a target="_blank" rel="noopener noreferrer" href="https://daodao.zone">Launch a DAO on Juno</a>.',
+        'Try out <a target="_blank" rel="noopener noreferrer" href="https://daodao.zone"> JunoTools</a>!',
         // backgroundColor: '#000',
         // textColor: '#fff',
         isCloseable: true,

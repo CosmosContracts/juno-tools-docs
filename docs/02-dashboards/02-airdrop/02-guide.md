@@ -18,7 +18,7 @@ Keplr is a web wallet for interacting with web3 applications in the interchain. 
 To interact with Junotools and airdrop your CW-20 tokens, you'll need $JUNO. You can pick some up on [Osmosis](https://osmosis.zone/).
 :::
 
-## Create an Airdrop
+## Create
 
 Before creating an airdrop, you need to decide on a few things
 
@@ -32,7 +32,7 @@ Before creating an airdrop, you need to decide on a few things
 * `totalAmount` is the number of tokens to be airdropped.
 
 
-### File to Upload
+### File
 
 To create an airdrop, you must provide a JSON file in the following format with the parameters explained above.
 
@@ -75,7 +75,7 @@ Depending on the size of the airdrop, It could take time for your airdrop to pro
 Next version will include optimized merkle tree build.
 :::
 
-## Register the Airdrop
+## Register
 
 Now that the contract is deployed, it can be registered to the JunoTools. You will be directed to the airdrop register page automatically.
 
@@ -87,19 +87,16 @@ It's always a good idea to save the contract address manually in case a browser-
 
 ![](/img/airdrop/register-airdrop.png)
 
-## Fund the Airdrop
+## Fund
 
 As the last step, you will have to fund the airdrop contract in order for the airdrop to be claimable.
 
 ![](/img/airdrop/fund-airdrop.png)
 
-## Claim the Airdrop
+## Claim
 
 Now that you successfully started the airdrop, it will be shown on the [Available Airdrops page.](https://test.junotools.com/airdrops/list)
 
 ![](/img/airdrop/available-airdrops.png)
 
 Congrats! You have successfully started an airdrop.
-
-
-

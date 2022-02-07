@@ -9,7 +9,7 @@ const config = {
   title: 'JunoTools',
   tagline: 'Multi-tool of Juno Network',
   url: 'https://docs.juno.tools',
-  organizationName: 'juno', // Github org name
+  organizationName: 'CosmosContracts', // Github org name
   projectName: 'juno-tools-docs', // Usually your repo name.
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
@@ -27,7 +27,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/deus-labs/junotools/docs/tree/main/',
+          editUrl: 'https://github.com/CosmosContracts/juno-tools-docs/edit/main',
         },
         // blog: {
         //   showReadingTime: true,
@@ -92,7 +92,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/deus-labs/junotools-docs',
+                href: 'https://github.com/CosmosContracts/juno-tools-docs',
               },
             ],
           },

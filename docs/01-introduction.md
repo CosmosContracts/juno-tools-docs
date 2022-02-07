@@ -11,9 +11,9 @@ We call these front-end apps as **Smart Contact Dashboard** or **sc dashboard** 
 
 - [Airdrop](/02-dashboards/02-airdrop/01-introduction.md)
 
-## v1 Release
+## v1-beta Release
 
-With the upcoming v1 release, we will provide:
+With the upcoming v1-beta release, we will provide:
 
 - New UI/UX feels like [daodao.zone](https://daodao.zone)
 - New Smart Contract Dashboards: CW20 (base, bonding, staking) and CW1(subkeys) and maybe more...

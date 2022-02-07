@@ -9,8 +9,8 @@ const config = {
   title: 'JunoTools',
   tagline: 'Multi-tool of Juno Network',
   url: 'https://docs.juno.tools',
-  organizationName: 'deus-labs', // Github org name
-  projectName: 'junotools-docs', // Usually your repo name.
+  organizationName: 'juno', // Github org name
+  projectName: 'juno-tools-docs', // Usually your repo name.
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
   baseUrl: '/',

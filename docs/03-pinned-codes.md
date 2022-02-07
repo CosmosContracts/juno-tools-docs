@@ -18,7 +18,7 @@ You can read more at [docs.cosmwasm.com](https://docs.cosmwasm.com/docs/smart-co
 
 Codes listed on Juno mainnet and testnet will appear here so you can use them anywhere.
 
-### Mainnet `juno1`
+### Mainnet `juno-1`
 
 | Code Name           | ID  |
 |---------------------|-----|

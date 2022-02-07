@@ -70,6 +70,11 @@ Uploaded JSON will be prompted to the screen, make sure that you uploaded the co
 
 When you are done, you can press the **Create Airdrop** button to deploy the contract.
 
+:::info
+Depending on the size of the airdrop, It could take time for your airdrop to process and build merkle tree.
+Next version will include optimized merkle tree build.
+:::
+
 ## Register the Airdrop
 
 Now that the contract is deployed, it can be registered to the JunoTools. You will be directed to the airdrop register page automatically.

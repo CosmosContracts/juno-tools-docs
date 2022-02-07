@@ -7,7 +7,7 @@ sidebar_position: 2
 In this guide, we'll go over the steps of airdropping tokens.
 
 ## Connect your wallet
-To start airdropping your tokens, head to [juno.tools](https://test.junotools.com) and connect
+To start airdropping your tokens, head to [juno.tools](https://test.juno.tools) and connect
 your [Keplr wallet](https://wallet.keplr.app/).
 
 :::tip Don't have a crypto wallet for interacting with Juno? Get Keplr!
@@ -22,7 +22,7 @@ To interact with Junotools and airdrop your CW-20 tokens, you'll need $JUNO. You
 
 Before creating an airdrop, you need to decide on a few things
 
-* `name` which will be shown on the [available airdrops page](https://test.junotools.com/airdrops/list).
+* `name` which will be shown on the [available airdrops page](https://test.juno.tools/airdrops/list/).
 * `accounts` holds all the `addresses` and their respective claimable `amount`.
 * `cw20TokenAddress` address of the cw20 token that will be airdropped.
 * `start` refers to the block number or the block timestamp, depending on the `startType`, that airdrop will become claimable. Setting it to `null` will make the airdrop claimable at the next block.
@@ -60,7 +60,7 @@ To create an airdrop, you must provide a JSON file in the following format with 
 
 
 
-When the JSON file is ready, head to the [Create Airdrop page](https://test.junotools.com/airdrops/create) and upload the JSON file.
+When the JSON file is ready, head to the [Create Airdrop page](https://test.juno.tools/airdrops/create) and upload the JSON file.
 
 ![](/img/airdrop/create-airdrop-1.png)
 
@@ -95,7 +95,7 @@ As the last step, you will have to fund the airdrop contract in order for the ai
 
 ## Claim
 
-Now that you successfully started the airdrop, it will be shown on the [Available Airdrops page.](https://test.junotools.com/airdrops/list)
+Now that you successfully started the airdrop, it will be shown on the [Available Airdrops page.](https://test.juno.tools/airdrops/list)
 
 ![](/img/airdrop/available-airdrops.png)
 

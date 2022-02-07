@@ -69,7 +69,7 @@ const config = {
             label: 'Docs',
           },
           {
-            href: 'https://juno.tools/',
+            href: 'https://test.juno.tools/',
             label: 'Launch the app!',
             position: 'right',
           },

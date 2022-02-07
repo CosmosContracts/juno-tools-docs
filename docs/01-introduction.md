@@ -5,7 +5,7 @@ sidebar_position: 1
 # Introduction
 
 JunoTools is a swiss knife that helps you build on Juno by providing smart contract front ends.
-We call these front end apps as **Smart Contact Dashboard** or **sc dashboard** as short.
+We call these front-end apps as **Smart Contact Dashboard** or **sc dashboard** as short.
 
 ## Available Smart Contract Dashboards
 
@@ -13,9 +13,9 @@ We call these front end apps as **Smart Contact Dashboard** or **sc dashboard** 
 
 ## v1 Release
 
-With upcoming v1 release, we will provide:
+With the upcoming v1 release, we will provide:
 
 - New UI/UX feels like [daodao.zone](https://daodao.zone)
 - New Smart Contract Dashboards: CW20 (base, bonding, staking) and CW1(subkeys) and maybe more...
 - [Pinned Codes](pinned-codes): 40x performance boost on smart contracts instantiated using JunoTools,
- [more read](https://docs.cosmwasm.com/docs/smart-contracts/components/code-pinning)
+ [read more here.](https://docs.cosmwasm.com/docs/smart-contracts/code-pinning/)

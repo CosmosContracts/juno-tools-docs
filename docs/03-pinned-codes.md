@@ -6,13 +6,13 @@ sidebar_position: 3
 
 **Code Pinning** mechanism allows codes to be pinned to the memory.
 
-This way code does not have to be loaded to memory on each execution thus makes **~x40 performance**.
+This way code does not have to be loaded to memory on each execution thus making **~x40 performance**.
 
-This is an estimation, needs to be benchmarked.
+This is an estimation, that needs to be benchmarked.
 
 Code pinning is done through native chain governance.
 
-You can read more at [docs.cosmwasm.com](https://docs.cosmwasm.com/docs/smart-contracts/components/code-pinning/)
+You can read more at [docs.cosmwasm.com](https://docs.cosmwasm.com/docs/smart-contracts/code-pinning/)
 
 ## Listed Codes
 
@@ -37,3 +37,6 @@ Codes listed on Juno mainnet and testnet will appear here so you can use them an
 | cw20-bonding        | N/A |
 | cw20-stake          | N/A |
 | cw1-subkeys         | N/A |
+
+
+

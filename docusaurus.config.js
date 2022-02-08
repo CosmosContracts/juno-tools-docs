@@ -49,7 +49,7 @@ const config = {
       announcementBar: {
         id: 'try_it_out',
         content:
-        'Try out <a target="_blank" rel="noopener noreferrer" href="https://juno.tools"> JunoTools</a>!',
+        'Try out <a target="_blank" rel="noopener noreferrer" href="https://test.juno.tools"> JunoTools</a>!',
         // backgroundColor: '#000',
         // textColor: '#fff',
         isCloseable: true,

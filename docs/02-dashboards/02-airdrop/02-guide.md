@@ -31,6 +31,9 @@ Before creating an airdrop, you need to decide on a few things
 * `expirationType` can be set to either block number (height) or block timestamp (timestamp).
 * `totalAmount` is the number of tokens to be airdropped.
 
+:::info
+Start and Expiration dates must be written in MM/DD/YYYY format. Otherwise, unexpected behaviour might happen.
+:::
 
 ### File
 

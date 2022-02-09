@@ -26,13 +26,13 @@ Before creating an airdrop, you need to decide on a few things
 * `accounts` holds all the `addresses` and their respective claimable `amount`.
 * `cw20TokenAddress` address of the cw20 token that will be airdropped.
 * `start` refers to the block number or the block timestamp, depending on the `startType`, that airdrop will become claimable. Setting it to `null` will make the airdrop claimable at the next block.
-* `startType` can be set to either block number (height), block timestamp (timestamp), or null if the start is also null.
-* `expiration` refers to the block number or the block timestamp, depending on the `startType`, that airdrop will expire. Setting it to `null` will keep the airdrop alive until every drop is claimed
-* `expirationType` can be set to either block number (height) or block timestamp (timestamp).
+* `startType` can be set to either block number (height), block timestamp (timestamp), or null if the `start` is also null.
+* `expiration` refers to the block number or the block timestamp, depending on the `expirationType`, that airdrop will expire. Setting it to `null` will keep the airdrop alive until every drop is claimed
+* `expirationType` can be set to either block number (height), block timestamp (timestamp), or null if the `expiration` is also null.
 * `totalAmount` is the number of tokens to be airdropped.
 
-:::info
-Start and Expiration dates must be written in MM/DD/YYYY format. Otherwise, unexpected behaviour might happen.
+:::tip
+When start and expiration fields are taken as timestamps, they should be UNIX timestamps in seconds. So Wednesday, February 9, 2022, 8:09:32 AM becomes 1644394172. This is what the user needs to put in the JSON file. Unix timestamp in seconds can be obtained using an [epoch converter](https://www.epochconverter.com/)
 :::
 
 ### File
@@ -53,29 +53,27 @@ To create an airdrop, you must provide a JSON file in the following format with 
    }
  ],
  "cw20TokenAddress": "<token-contract-address>",
- "start": "<airdrop-start-block-number> OR <unix-timestamp> OR null",
+ "start": "<airdrop-start-block-number> OR <unix-timestamp-in-seconds> OR null",
  "startType": "<height OR timestamp> OR null",
- "expiration": "<airdrop-end-block-number> OR <unix-timestamp> OR null",
+ "expiration": "<airdrop-end-block-number> OR <unix-timestamp-in-seconds> OR null",
  "expirationType": "<height OR timestamp> OR null",
  "totalAmount": "<total-airdropped-token-amount>"
 }
 ```
 
-
-
 When the JSON file is ready, head to the [Create Airdrop page](https://test.juno.tools/airdrops/create) and upload the JSON file.
 
 ![](/img/airdrop/create-airdrop-1.png)
 
-Uploaded JSON will be prompted to the screen, make sure that you uploaded the correct file. 
+Uploaded JSON will be prompted to the screen, make sure that you uploaded the correct file.
 
 ![](/img/airdrop/create-airdrop-2.png)
 
 When you are done, you can press the **Create Airdrop** button to deploy the contract.
 
 :::info
-Depending on the size of the airdrop, It could take time for your airdrop to process and build merkle tree.
-Next version will include optimized merkle tree build.
+Depending on the size of the airdrop, It could take time for your airdrop to process and build a Merkle tree.
+The next version will include an optimized Merkle tree build.
 :::
 
 ## Register
@@ -83,16 +81,18 @@ Next version will include optimized merkle tree build.
 Now that the contract is deployed, it can be registered to the JunoTools. You will be directed to the airdrop register page automatically.
 
 :::tip
-
-It's always a good idea to save the contract address manually in case a browser-related issue occurs, this way you won't have to deploy the contract again. This way you can manually register and fund your airdrops. 
-
+It's always a good idea to save the contract address manually in case a browser-related issue occurs, so you won't have to deploy the contract again. This way you can manually register and fund your airdrops.
 :::
 
 ![](/img/airdrop/register-airdrop.png)
 
 ## Fund
 
-As the last step, you will have to fund the airdrop contract in order for the airdrop to be claimable.
+There are 2 ways to fund an airdrop
+
+* **Fund with Transfer**: Anyone with the airdrop address can fund it if they have the balance.
+* **Fund with Mint**: Only the creator and the minter of the token can fund the airdrop directly from minting.
+ After the airdrop is funded and the `start` time/block has passed, the airdrop will be claimable.
 
 ![](/img/airdrop/fund-airdrop.png)
 
@@ -102,4 +102,10 @@ Now that you successfully started the airdrop, it will be shown on the [Availabl
 
 ![](/img/airdrop/available-airdrops.png)
 
-Congrats! You have successfully started an airdrop.
+You can see the airdrop you have allocated to by checking out **Your Allocation** row.
+
+To claim an airdrop, press the **Claim** button on the same row, followed by pressing **Claim Drop** on the directed page.
+
+![](/img/airdrop/claim-airdrop.png)
+
+Congrats! You have successfully learned how to create your own airdrop and claim it.

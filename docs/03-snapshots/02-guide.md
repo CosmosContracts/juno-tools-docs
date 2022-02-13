@@ -4,11 +4,10 @@ sidebar_position: 2
 
 # Guide
 
-In this guide, we'll go over the steps of juno blockhain restoring a snapshot process.
+In this guide, we'll go over the steps of the Juno blockchain restoring a snapshot process.
 
 
-:::danger Backup your data!
-Before proceeding with next steps please do a config directory `~/.juno/config` backup to mitigate the risks of loosing validator's consensus key.
+:::danger Backup your data! Before proceeding with the next steps please do a config directory `~/.juno/config` backup to mitigate the risks of losing the validator's consensus key. 
 :::
 
 
@@ -20,7 +19,7 @@ Before creating an airdrop, you need to decide on a few things
 sudo systemctl stop junod.service
 ```
 
-## Remove old data in directory
+## Remove old data in the directory
 
 ```bash
 rm -rf ~/.juno/data; \
@@ -30,8 +29,7 @@ cd ~/.juno/data
 
 ## Download snapshot
 
-:::tip
-Full blockhain database's size is more than 500GB, it may take a while to download the archive.
+:::tip Full blockchain database's size is more than 500GB, it may take a while to download the archive. 
 :::
 
 ```bash
@@ -51,4 +49,4 @@ sudo journalctl -u junod -f
 ```
 
 
-Congrats! You have successfully learned how to restore a juno blockhain's snapshot on your node.
+Congrats! You have successfully learned how to restore a Juno blockchain's snapshot on your node.

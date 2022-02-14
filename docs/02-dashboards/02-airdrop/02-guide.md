@@ -31,35 +31,105 @@ Before creating an airdrop, you need to decide on a few things
 * `expirationType` can be set to either block number (height), block timestamp (timestamp), or null if the `expiration` is also null.
 * `totalAmount` is the number of tokens to be airdropped.
 
-:::tip
-When start and expiration fields are taken as timestamps, they should be UNIX timestamps in seconds. So Wednesday, February 9, 2022, 8:09:32 AM becomes 1644394172. This is what the user needs to put in the JSON file. Unix timestamp in seconds can be obtained using an [epoch converter](https://www.epochconverter.com/)
-:::
-
-### File
+### Example Files
 
 To create an airdrop, you must provide a JSON file in the following format with the parameters explained above.
 
+We have provided example JSON files below to ease the process. In newer versions, all the actions will be handled through the UI with the exception of an expected CSV file upload to read addresses and amounts.
+
+#### Timestamp
+
+Every block has a timestamp according to the time it's proposed. You can use the timestamp as an indicator for the airdrop start and expiration times.
+
+:::tip
+When start and expiration fields are taken as timestamps, they should be UNIX timestamps in seconds. So Monday, February 14, 2022, 9:00:00 AM becomes 1644829200. This is what the user needs to put in the JSON file. Unix timestamp in seconds can be obtained using an [epoch converter](https://www.epochconverter.com/)
+:::
+
+To create an airdrop starting at **February 14, 2022, 9:00:00 AM** and ending at **February 15, 2022, 9:00:00 AM**, the example file look like the following:
+
 ```json
 {
- "name": "<project-name>",
- "accounts": [
-   {
-     "address": "junoxxx",
-     "amount": 1234
-   },
-   {
-     "address": "junoyyy",
-     "amount": 1234
-   }
- ],
- "cw20TokenAddress": "<token-contract-address>",
- "start": "<airdrop-start-block-number> OR <unix-timestamp-in-seconds> OR null",
- "startType": "<height OR timestamp> OR null",
- "expiration": "<airdrop-end-block-number> OR <unix-timestamp-in-seconds> OR null",
- "expirationType": "<height OR timestamp> OR null",
- "totalAmount": "<total-airdropped-token-amount>"
+"name": "Tension",
+"accounts": [
+  {
+    "address": "juno1qhcrmfmgdt6e550a544lzup5htv0svnk2uxagl",
+    "amount": 100
+  },
+  {
+    "address": "juno1d90w4s4pcup6qceyrvckj35zwwy2j4u2pwfnax",
+    "amount": 100
+  }
+],
+"cw20TokenAddress": "juno15q5gxnj6lxk4t08cllajcq3wvlwelzus3hz4tfz9uphpa6rjrwpq7uplvd",
+"start": "1644829200",
+"startType": "timestamp",
+"expiration": "1644915600",
+"expirationType": "timestamp",
+"totalAmount": "200"
 }
 ```
+
+#### Height
+
+As of the 14th of February, the current block height in Juno is 1890000. The average block time in Juno is around 6.3 seconds. Following this piece of information, you can estimate the block time you want the airdrop to expire.
+
+For example, if you want your airdrop to last for a day then you'll need to add **60 \* 60 \* 24 / 6.3 = ~13714** to your block height.
+
+```json
+{
+"name": "Tension",
+"accounts": [
+  {
+    "address": "juno1qhcrmfmgdt6e550a544lzup5htv0svnk2uxagl",
+    "amount": 100
+  },
+  {
+    "address": "juno1d90w4s4pcup6qceyrvckj35zwwy2j4u2pwfnax",
+    "amount": 100
+  }
+],
+"cw20TokenAddress": "juno15q5gxnj6lxk4t08cllajcq3wvlwelzus3hz4tfz9uphpa6rjrwpq7uplvd",
+"start": "1890000",
+"startType": "height",
+"expiration": "1903714",
+"expirationType": "height",
+"totalAmount": "200"
+}
+```
+
+#### Null type
+
+If you want your airdrop to start immediately after the initialization and funding processes you can set the `startType` to `null`.
+
+On the other hand, for if you don't want your airdrops to expire until every drop is claimed you can set `expirationType` to null.
+
+```json
+{
+"name": "Tension",
+"accounts": [
+  {
+    "address": "juno1qhcrmfmgdt6e550a544lzup5htv0svnk2uxagl",
+    "amount": 100
+  },
+  {
+    "address": "juno1d90w4s4pcup6qceyrvckj35zwwy2j4u2pwfnax",
+    "amount": 100
+  }
+],
+"cw20TokenAddress": "juno15q5gxnj6lxk4t08cllajcq3wvlwelzus3hz4tfz9uphpa6rjrwpq7uplvd",
+"start": "null",
+"startType": "null",
+"expiration": "null",
+"expirationType": "null",
+"totalAmount": "200"
+}
+
+```
+:::tip
+It's possible to mix the types to start the airdrop at a certain timestamp but also keep the airdrop alive until every drop is claimed. It can be achieved by setting the `start` to a UNIX timestamp, `startType` to `timestamp`, and `expirationType` to `null`
+:::
+
+### File Upload
 
 When the JSON file is ready, head to the [Create Airdrop page](https://test.juno.tools/airdrops/create) and upload the JSON file.
 
@@ -92,7 +162,7 @@ There are 2 ways to fund an airdrop
 
 * **Fund with Transfer**: Anyone with the airdrop address can fund it if they have the balance.
 * **Fund with Mint**: Only the creator and the minter of the token can fund the airdrop directly from minting.
- After the airdrop is funded and the `start` time/block has passed, the airdrop will be claimable.
+After the airdrop is funded and the `start` time/block has passed, the airdrop will be claimable.
 
 ![](/img/airdrop/fund-airdrop.png)
 

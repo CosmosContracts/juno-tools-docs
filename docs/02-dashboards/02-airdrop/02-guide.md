@@ -33,7 +33,7 @@ Before creating an airdrop, you need to decide on a few things
 
 ### Example Files
 
-To create an airdrop, you must provide a JSON file in the following format with the parameters explained above.
+To create an airdrop, you must provide a JSON file with the parameters explained above.
 
 We have provided example JSON files below to ease the process. In newer versions, all the actions will be handled through the UI with the exception of an expected CSV file upload to read addresses and amounts.
 

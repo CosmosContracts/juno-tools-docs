@@ -1,4 +1,4 @@
----thanks. ismiminarkasindayim.ust <= Twitter
+---
 sidebar_position: 1
 ---
 

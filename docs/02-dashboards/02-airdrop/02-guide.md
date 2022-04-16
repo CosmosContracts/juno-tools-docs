@@ -74,7 +74,7 @@ It's possible to mix the types to start the airdrop at a certain timestamp but a
 
 To create an airdrop, you must provide a CSV file with addresses and their respective amounts.
 
-Basically, a CSV file is a data table where the columns and values are separated with `,` as the delimiter. Most of the spreadsheet software such as Excel, LibreOffice Calc, and, Google Spreadsheets lets you export your sheet as a CSV file.
+A CSV file is a data table where the columns and values are separated with `,` as the delimiter. Most spreadsheet software such as Excel, LibreOffice Calc, and, Google Spreadsheets lets you export your sheet as a CSV file.
 
 The first row of a CSV file, called the header, should contain the column names. In our case, they will be `address` and `amount`
 
@@ -156,10 +156,10 @@ You can search for an airdrop by its name or contract address.
 :::
 
 
-You can see the airdrop you have allocated to by checking out the final column.
+You can see the airdrop you have allocated by checking out the final column.
 
 To claim an airdrop, press the **Claim** button on the same row, followed by pressing **Claim Airdrop** on the directed page.
 
 ![](/img/airdrop/claim-airdrop.png)
 
-Congrats! You have successfully learned how to create your own airdrop and claim it.
+Congrats! You have successfully learned how to create your airdrop and claim it.

@@ -28,6 +28,3 @@ Unlike traditional methods, it lets the addresses registered in the Merkle tree 
 ## Next Steps
 
 To learn how to manage your airdrop on JunoTools, jump to our [guide](/docs/dashboards/airdrop/guide).
-
-
-

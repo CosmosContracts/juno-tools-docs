@@ -17,7 +17,6 @@ Using the dashboards is **free** for everyone, and will always be.
 
 With the upcoming v1-beta release, we will provide:
 
-- New UI/UX feels like [daodao.zone](https://daodao.zone)
-- New Smart Contract Dashboards: CW20 (base, bonding, staking) and CW1(subkeys) and maybe more...
+- New Smart Contract Dashboards: CW20 (base, bonding, staking), and CW1(subkeys),
 - [Pinned Codes](pinned-codes): 40x performance boost on smart contracts instantiated using JunoTools,
  [read more here.](https://docs.cosmwasm.com/docs/smart-contracts/code-pinning/)

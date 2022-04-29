@@ -90,6 +90,12 @@ juno13h87a326acl7aezjseu9eja8e3uh4c9h66fgyd,1000
 juno1ed5skh36xhtsa6v998kq6ewcysg3aeundztue4,1000
 ```
 
+:::warning
+Make sure you enter the amounts in correct decimal form. You must multiply the amount according to the decimal value.
+For example: if you want to airdrop 1 token and your token has 6 decimals, it must be written as 1000000 in the csv file.
+:::
+
+
 #### File Upload
 
 When everything is ready, upload the CSV file.

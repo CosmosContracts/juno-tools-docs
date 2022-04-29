@@ -28,18 +28,39 @@ After you sign the message, you will be prompted with the signature.
 
 You can publish the signature so anyone can verify the message you signed.
 
-## Verify
+## Verification 
+
+To verify a message, you need three pieces of information: **address that signed the message**, **signed message**, **signature of the message**.
+
+There are 2 ways to verify the message:
+- An auto generated link that autofills the neccessary information
+- Manual verification
+
+### Tweet
+
+After signing your message, you'll notice the **Send Tweet** button. 
+
+It allows you to share an auto generated link for others to verify your message autofilled with your address, message, and signature trio. 
+
+![](/img/sign-and-verify/twitter-share.png)
+
+### Manual
 
 To verify a message, you need three pieces of information: **address that signed the message**, **signed message**, **signature of the message**.
 
 After you acquire the necessary information, you can verify it by inputting them into JunoTools.
 
+### Approved
+
 A correct verification will prompt you with a success message.
 
 ![](/img/sign-and-verify/verified-message.png)
+
+### Rejected
 
 In case the signed message, address, and signature does not match you will be notified by an error message.
 
 ![](/img/sign-and-verify/wrong-message.png)
 
 Congrats! You have successfully learned how to sign a message and verify it.
+

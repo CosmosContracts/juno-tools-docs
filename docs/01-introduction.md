@@ -12,4 +12,5 @@ Using the dashboards is **free** for everyone, and will always be.
 ## Available Smart Contract Dashboards
 
 - [Airdrop](/02-dashboards/02-airdrop/01-introduction.md)
-- [CW-20](/02-dashboards/04-cw-20/01-introduction.md)
+- [CW-20](/02-dashboards/03-cw-20/01-introduction.md)
+- [Sign and Verify](/02-dashboards/04-sign-and-verify/01-introduction.md)

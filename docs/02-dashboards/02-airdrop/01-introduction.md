@@ -10,7 +10,7 @@ Simply put, an airdrop is a way of distributing tokens to a set of addresses. It
 
 An airdrop lets you reach a wide audience of people, promote your project, and help people get started with your project. Junotools uses Merkle Airdrop to distribute the tokens which are explained below.
 
-## Junotools and the Airdrops
+## Junotools and Airdrops
 
 Junotools helps you easily create airdrops and distribute your tokens without writing a line of code.
 

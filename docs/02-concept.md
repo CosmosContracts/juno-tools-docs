@@ -52,10 +52,6 @@ The process above executes a single message, with further development there coul
 
 ## Roadmap
 
-Our team started as a couple of skilled young devs as Juno being our first experience of becoming a validator and spin a software development house startup meanwhile the network is experiencing an unseen type of chaos. 
-
-This has been a hell of a ride for us.
-
 The possibilities we see for the tool's future are the following:
 - Move web2 infrastructure to Akash
 - Support Snapshots
@@ -63,15 +59,3 @@ The possibilities we see for the tool's future are the following:
 - Explore the setting up of a standard for chain-wide pinned code governance.
 - Transaction Builder, a simplified and no-code transaction builder based on drag and drop boxes.
 - JunoTools DAO, as we don't want to be the gate holders to what contract dashboards must be on the UI. The community, through the DAO, should be included. The DAO voting could be a token distribution or technical lead teams of the network.
-
-## Collaboration
-
-Junotools is an open-source project, you are welcome to any kind of contribution. Be it a small bug fix, a typo, or a completely new contract to the dashboard. Your contributions will grow the project and the whole ecosystem.
-
-If you need help, you can get support at the JunoTools channel on [Juno Discord.](https://discord.com/invite/juno)
-
-Feedback can also be done through the discord channel and GitHub issues.
-
-If your chain needs tools, contact us through the discord or DMs. Since the code is open-source, feel free to fork, use and contribute.
-
-Back to building.

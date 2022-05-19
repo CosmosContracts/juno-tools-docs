@@ -46,7 +46,7 @@ Using the dashboard, it is possible to query any CW20 token for
 
 However, each query requires at least 1 input which is the CW20 contract address. 
 
-**All Accounts**, **Minter**, and **Marketing** queries do not require additional parameters other than CW20 contract address. Required parameters for other queries are shown below.
+**All Accounts**, **Minter**, and **Marketing** queries do not require additional parameters other than the CW20 contract address. Required parameters for other queries are shown below.
 
 - **Balance** of a specific address
   - Owner Address
@@ -66,14 +66,14 @@ A CW20 Contract contains a set of methods to control and interact with the token
 
 All the messages that can be executed are explained below.
 
-- **Burn**: Remove some amount of tokens from **your** balance and reduce total token supply by the same amount.
+- **Burn**: Remove some amount of tokens from **your** balance and reduce the total token supply by the same amount.
 - **Burn From**: Make use of an allowance and remove some amount of tokens from the balance of **another** address.
 - **Increase Allowance**: Increase the allowance of an address based on your balance.
 - **Decrease Allowance**: Decrease the allowance of an address based on your balance.
 - **Transfer**: Move some amount of tokens from one address to another address.
-- **Transfer From**: Make use of an allowance and move some amount of tokens from one address to another address. Your address must be given allowance from another address to use this.
+- **Transfer From**: Make use of an allowance and move some amount of tokens from one address to another address. Your address must be given an allowance from another address to use this.
 - **Send**: Move some amount of tokens from one address to another address and execute a message in the end.
-- **Send From**: Make use of an allowance and move some amount of tokens from one address to another address and execute a message in the end.
+- **Send From**: Make use of an allowance and move some amount of tokens from one address to another address and execute a message at the end.
 - **Update Marketing**: Update marketing information related to your token contract.
 - **Update Logo**: Update token logo URL.
 

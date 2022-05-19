@@ -10,11 +10,11 @@ In this guide, we'll go over how to instantiate, query, and execute CW721 method
 
 ## Instantiate
 
-In order to create a CW721 contract, which can be a NFT collection or a single NFT, it must be instantiated first.
+In order to create a CW721 contract, which can be an NFT collection or a single NFT, it must be instantiated first.
 
-Thanks to JunoTools dashboard, you can easily instantiate a CW721 contract.
+Thanks to the JunoTools dashboard, you can easily instantiate a CW721 contract.
 
-Only thing you need to decide is the **Minter Address**, which will be the only authority to mint new tokens inside the CW721 contract.
+The only thing you need to decide is the **Minter Address**, which will be the only authority to mint new tokens inside the CW721 contract.
 
 ![](/img/cw-721/cw721-instantiate.png)
 
@@ -27,7 +27,7 @@ Using the dashboard, it is possible to query any CW721 token for
 
 However, each query requires at least 1 input which is the CW721 contract address. 
 
-**Number of Tokens**, **Contract Info**, **All Tokens**, and **Minter** queries do not require additional parameters other than CW721 contract address. Required parameters for other queries are shown below.
+**Number of Tokens**, **Contract Info**, **All Tokens**, and **Minter** queries do not require additional parameters other than the CW721 contract address. Required parameters for other queries are shown below.
 
 - **Owner Of**: Outputs the owner of a token inside the contract
   - Token ID
@@ -38,7 +38,7 @@ However, each query requires at least 1 input which is the CW721 contract addres
   - Token ID
 - **All Operators**: explanation will be added shortly.
   - Owner Address
-- **NFT Info**: Contains token uri and extension informations.
+- **NFT Info**: Contains token URI and extension informations.
   - Token ID
 - **All NFT Info**: More comprehensive information related to the NFT such as owner address and all the approvals.
   - Token ID
@@ -46,7 +46,7 @@ However, each query requires at least 1 input which is the CW721 contract addres
   - Owner Address
 
 ## Execute
-A CW721 Contract contains a set of methods to control and interact with the tokens it contains. JunoTools let's you easily execute those methods as you wish with just a click.
+A CW721 Contract contains a set of methods to control and interact with the tokens it contains. JunoTools lets you easily execute those methods as you wish with just a click.
 
 ![](/img/cw-721/execute.png)
 

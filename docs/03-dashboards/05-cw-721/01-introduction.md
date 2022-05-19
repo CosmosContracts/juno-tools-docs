@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## What's a CW721?
 
-CW721 is a specification for non-fungible tokens based on CosmWasm. The name and design is based on Ethereum's ERC721 standard, with some enhancements. The types in here can be imported by contracts that wish to implement this spec, or by contracts that call to any standard CW721 contract.
+CW721 is a specification for non-fungible tokens based on CosmWasm. The name and design are based on Ethereum's ERC721 standard, with some enhancements. The types in here can be imported by contracts that wish to implement this spec, or by contracts that call to any standard CW721 contract.
 
 ## JunoTools and CW721
 

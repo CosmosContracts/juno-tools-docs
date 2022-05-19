@@ -11,7 +11,7 @@ To start airdropping your tokens, head to [juno.tools](https://test.juno.tools) 
 your [Keplr wallet](https://wallet.keplr.app/).
 
 :::tip Don't have a crypto wallet for interacting with Juno? Get Keplr!
-Keplr is a web wallet for interacting with web3 applications in the interchain. You can install the keplr extension from [here](https://www.keplr.app/) if you don't have it already.
+Keplr is a web wallet for interacting with web3 applications in the interchain. You can install the Keplr extension from [here](https://www.keplr.app/) if you don't have it already.
 :::
 
 :::danger Get some $JUNO!
@@ -91,8 +91,8 @@ juno1ed5skh36xhtsa6v998kq6ewcysg3aeundztue4,1000
 ```
 
 :::warning
-Make sure you enter the amounts in correct decimal form. You must multiply the amount according to the decimal value.
-For example: if you want to airdrop 1 token and your token has 6 decimals, it must be written as 1000000 in the csv file.
+Make sure you enter the amounts in the correct decimal form. You must multiply the amount according to the decimal value.
+For example: if you want to airdrop 1 token and your token has 6 decimals, it must be written as 1000000 in the CSV file.
 :::
 
 

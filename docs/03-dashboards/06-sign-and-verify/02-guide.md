@@ -15,7 +15,7 @@ The message you input will be signed with your private key and it will be verifi
 ![](/img/sign-and-verify/sign-message.png)
 
 :::info
-You will be prompted a request from Keplr.
+You will be prompted with a request from Keplr.
 
 Notice that this isn't a transaction, so you are not paying any fee. You are just signing a message with your private key.
 
@@ -33,14 +33,14 @@ You can publish the signature so anyone can verify the message you signed.
 To verify a message, you need three pieces of information: **address that signed the message**, **signed message**, **signature of the message**.
 
 There are 2 ways to verify the message:
-- An auto generated link that autofills the neccessary information
+- An auto-generated link that auto-fills the necessary information
 - Manual verification
 
 ### Tweet
 
 After signing your message, you'll notice the **Send Tweet** button. 
 
-It allows you to share an auto generated link for others to verify your message autofilled with your address, message, and signature trio. 
+It allows you to share an auto-generated link for others to verify your message auto-filled with your address, message, and signature trio. 
 
 ![](/img/sign-and-verify/twitter-share.png)
 
@@ -58,9 +58,8 @@ A correct verification will prompt you with a success message.
 
 ### Rejected
 
-In case the signed message, address, and signature does not match you will be notified by an error message.
+In case the signed message, address, and signature do not match you will be notified by an error message.
 
 ![](/img/sign-and-verify/wrong-message.png)
 
 Congrats! You have successfully learned how to sign a message and verify it.
-

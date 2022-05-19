@@ -14,21 +14,21 @@ This realization quickly revolved our ideas and raised the following question:
 
 ### What if we approach smart contracts UIs like protocols?
 
-Be it CW-20, CW-721, CW-1, or CW-DAO, all of these are protocol specifications. These protocols define what to expect as input messages and specify the methods you can execute on them. 
+Be it CW20, CW721, CW1, or CW-DAO, all of these are protocol specifications. These protocols define what to expect as input messages and specify the methods you can execute on them. 
 
-For example, CW-20 on Juno and Osmosis expect the same inputs and are capable of doing the same actions given they use the same CW-20 version. 
+For example, CW20 on Juno and Osmosis expect the same inputs and are capable of doing the same actions given they use the same CW20 version. 
 
 Thanks to the protocol specifications, we can have a generalization here.
 
-**RAW** is a CW-20, **SSCRT** is a CW-20, **sLuna** is a CW-20. They accept the same inputs, so then why not have a generalized contract UI standard across different networks so that the overhead of learning and using a new UX vanishes.
+**RAW** is a CW20, **SSCRT** is a CW20, **sLuna** is a CW20. They accept the same inputs, so then why not have a generalized contract UI standard across different networks so that the overhead of learning and using a new UX vanishes.
 
 JunoTools, OsmosisTools, StargazeTools, or xTools. You can interact with CosmWasm chains through a common UX with just different chain-based UI themes.
 
 ### Smart Contract Dashboard
 
-Smart contracts dashboards are intentionally named CW-1 and CW-20, not Token or Mint. 
+Smart contracts dashboards are intentionally named CW1 and CW20, not Token or Mint. 
 
-That's because interacting with a CW-20 token is like operating a car. The car is engineered and built to run, you don't need to know every detail of the machine to drive it but you need to read the manual shipped alongside the car. The interface is the steering wheel and the **dashboard**.
+That's because interacting with a CW20 token is like operating a car. The car is engineered and built to run, you don't need to know every detail of the machine to drive it but you need to read the manual shipped alongside the car. The interface is the steering wheel and the **dashboard**.
 
 Smart contract dashboards are just HTML data input forms for you to build the pieces together and start the execution.
 

@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Introduction
 
-## What's a CW-1 Subkeys Contract?
+## What's a CW1 Subkeys Contract?
 
 CW1 is a specification for proxy contracts based on CosmWasm. It is a very simple, but flexible interface designed for the case where one contract is meant to hold assets (or rights) on behalf of other contracts.
 
@@ -24,13 +24,13 @@ This also lets you to transfer non-transferable assets (eg. staked tokens, votin
 
 You can imagine more complex examples, such as a "1 of N" multisig, or conditional approval, where "sub-accounts" have the right to spend a limited amount of funds from this account, with a "admin account" retaining full control.
 
-## JunoTools and CW-1
+## JunoTools and CW1 Subkeys
 
-JunoToools provides an easy to use interface for creating and interacting with CW-1 contracts.
+JunoToools provides an easy to use interface for creating and interacting with CW1 contracts.
 
 Using JunoTools you can:
 - instantiate,
 - query,
-- and execute CW-1 contract methods. 
+- and execute CW1 contract methods. 
 
 All without paying any **extra** fees.

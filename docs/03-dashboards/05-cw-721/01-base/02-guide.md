@@ -36,7 +36,7 @@ However, each query requires at least 1 input which is the CW721 contract addres
   - Token ID
 - **Approvals**: The list of all approvals given by the owner of the token.
   - Token ID
-- **All Operators**: explanation will be added shortly.
+- **All Operators**: The list of addresses that have complete control over the inputted addresses NFTs. An operator is added by the **Approve All** method.
   - Owner Address
 - **NFT Info**: Contains token URI and extension informations.
   - Token ID
@@ -59,10 +59,10 @@ All the messages that can be executed and their parameters are given below.
   - Recipient Address
   - Token ID
   - Message to Execute
-- **Approve**: Allow another address to transfer/send a token from the owner's address.
+- **Approve**: Allow another address to transfer/send **a token** from the owner's address.
   - Recipient Address
   - Token ID
-- **Revoke**: Remove the transfer/send permissions of an address over a token.
+- **Revoke**: Remove the transfer/send permissions of an address over **a token**.
   - Recipient Address
   - Token ID
 - **Approve All**: Allow another address to transfer/send **all the tokens** from the owner's address.

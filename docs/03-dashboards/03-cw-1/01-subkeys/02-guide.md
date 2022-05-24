@@ -37,7 +37,7 @@ Checking the **Admins**, **All Permissions**, and **All Allowances** queries do 
 - **Permissions** are the permissions an address has provided by the admin.
   - Address to check permissions
 - **All Permissions** is the list of all addresses and their assigned permissions.
-- **Can Execute** explanation will be added shortly.
+- **Can Execute** is a way to verify if an address can execute a message. Checkout the Execute section below to see the message examples. 
 
 ## Execute
 A CW1 Contract contains a set of methods to control and interact with the token it contains. JunoTools lets you easily execute those methods as you wish with just a click.
@@ -46,11 +46,45 @@ A CW1 Contract contains a set of methods to control and interact with the token 
 
 All the messages that can be executed are explained below.
 
-- **Execute**: To execute a message, an admin has to give permission to an address. The address can execute the messages they have the permission which is as follows
-  - **Send**: explanation will be added shortly.
-  - **Delegate**: explanation will be added shortly.
-  - **Undelegate**: explanation will be added shortly.
-  - **Redelegate**: explanation will be added shortly.
+- **Execute**: To execute a message, an admin has to give permission to an address. Currently, messages have to be written manually. A message example for each example is given below
+  - **Send**: 
+    ```js
+      bank: {
+        send: {
+          from_address: messages.contractAddress,
+          to_address: wallet.address,
+          amount: [coin(1000000, 'ujunox')],
+        },
+      }
+    ```
+  - **Delegate**: 
+    ```js
+      staking: {
+        delegate: {
+          validator: 'junovaloper1t8ehvswxjfn3ejzkjtntcyrqwvmvuknzmvtaaa',
+          amount: coin(1000000, 'ujunox'),
+        },
+      }
+    ```
+  - **Undelegate**: 
+    ```js
+      staking: {
+        undelegate: {
+          validator: 'junovaloper1t8ehvswxjfn3ejzkjtntcyrqwvmvuknzmvtaaa',
+          amount: coin(1000000, 'ujunox'),
+        },
+      }
+    ```
+  - **Redelegate**:
+    ```js
+      staking: {
+        redelegate: {
+          src_validator: 'junovaloper1t8ehvswxjfn3ejzkjtntcyrqwvmvuknzmvtaaa',
+          dst_validator: 'junovaloper1t8ehvswxjfn3ejzkjtntcyrqwvmvuknzmvtaaa',
+          amount: coin(1000000, 'ujunox'),
+        },
+      }
+    ```
   - **Withdraw**: explanation will be added shortly.
 - **Freeze***: If the contract is initially set as **Changeable**, an admin can freeze the contract and stop anyone from adding a new admin.
 - **Update Admins**: Add a set of new admins to replace the older ones. This is possible if the contract is not frozen and is changeable.

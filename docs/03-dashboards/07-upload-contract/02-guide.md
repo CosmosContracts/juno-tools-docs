@@ -6,8 +6,8 @@ sidebar_position: 2
 
 In this guide, we'll go over how to upload a smart contract.
 
-## Generate a WASM File
-When a smart contract is going to be deployed on the Juno network, a WASM file must be generated first. 
+## What's a WASM file?
+When a smart contract is going to be deployed on the Juno network, a WASM file must be generated first. WASM, web assembly, is a portable binary-code format popular among blockchain applications.
 
 That's because the code will be interpreted by different machines and there is a need for a common understanding of a code, like a protocol.
 

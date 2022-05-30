@@ -6,8 +6,8 @@ sidebar_position: 2
 
 In this guide, we'll go over how to upload a smart contract.
 
-## Generate a WASM File
-When a smart contract is going to be deployed on Juno network, a WASM file must be generated first. 
+## What's a WASM file?
+When a smart contract is going to be deployed on the Juno network, a WASM file must be generated first. WASM, web assembly, is a portable binary-code format popular among blockchain applications.
 
 That's because the code will be interpreted by different machines and there is a need for a common understanding of a code, like a protocol.
 
@@ -38,7 +38,7 @@ cw-contract/
 └── target/ 
 ```
 
-There are few ways to generate a WASM file. 
+There are a few ways to generate a WASM file. 
 - Unoptimised: 
   ```bash
   cargo wasm
@@ -54,14 +54,14 @@ There are few ways to generate a WASM file.
 Be sure to execute the generation code at the root of the folder.
 
 :::warning
-Unoptimised WASM files might get too big for JunoTools to deploy thus fail or request more gas fees than usual.
+Unoptimized WASM files might get too big for JunoTools to deploy and thus fail or request more gas fees than usual.
 
-Try to build an optimised WASM file when possible.
+Try to build an optimized WASM file when possible.
 :::
 
 ![](/img/upload-contract/upload-contract.png)
 
-When the file is generated, simply head to the [Contract Upload page](https://juno.tools/contracts/upload/), choose the WASM file and press upload contract.
+When the file is generated, simply head to the [Contract Upload page](https://juno.tools/contracts/upload/), choose the WASM file, and press upload contract.
 
 ![](/img/upload-contract/uploaded-contract.png)
 

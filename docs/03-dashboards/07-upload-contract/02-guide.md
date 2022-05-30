@@ -61,7 +61,7 @@ Try to build an optimised WASM file when possible.
 
 ![](/img/upload-contract/upload-contract.png)
 
-When the file is generated, simply head to the [Contract Upload page](juno.tools/contracts/upload/), choose the WASM file and press upload contract.
+When the file is generated, simply head to the [Contract Upload page](https://juno.tools/contracts/upload/), choose the WASM file and press upload contract.
 
 ![](/img/upload-contract/uploaded-contract.png)
 

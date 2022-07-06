@@ -19,5 +19,6 @@ To quickly use the dashboard, simply jump to the following sections
 - [CW721 Base](/03-dashboards/05-cw-721/01-base/01-introduction.md)
 - [Sign and Verify](/03-dashboards/06-sign-and-verify/01-introduction.md)
 - [Upload Contract](/03-dashboards/07-upload-contract/01-introduction.md)
+- [Terra Airdrop](/03-dashboards/08-terra/01-introduction.md)
 
 If you want to learn more about the birth, vision, and roadmap of JunoTools,  head to the [Concept page](02-concept.md).

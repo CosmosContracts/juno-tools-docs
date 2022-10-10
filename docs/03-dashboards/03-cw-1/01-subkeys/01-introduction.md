@@ -26,7 +26,7 @@ You can imagine more complex examples, such as a "1 of N" multi-sig, or conditio
 
 ## JunoTools and CW1 Subkeys
 
-JunoToools provides an easy-to-use interface for creating and interacting with CW1 contracts.
+JunoTools provides an easy-to-use interface for creating and interacting with CW1 contracts.
 
 Using JunoTools you can:
 - instantiate,

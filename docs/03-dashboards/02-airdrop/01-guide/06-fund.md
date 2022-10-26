@@ -10,7 +10,7 @@ However, the process of airdropping CW-20 tokens and native token is a bit diffe
 
 ## CW20
 
-CW20 Tokens are only airdroppable by minting, only the minter of the token can fund the airdrop.
+CW20 Tokens are only airdroppable by minting, the address must be both admin and the minter of the CW20 token contract
 
 ![](/img/airdrop/fund-airdrop-cw20.png)
 

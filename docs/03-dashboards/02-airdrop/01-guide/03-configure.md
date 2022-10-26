@@ -1,10 +1,12 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
-# Guide
+# Configure
 
 In this guide, we'll go over the steps of airdropping tokens.
+
+Creating an airdrop is separated into 5 main parts: **Configure**, **Escrow**, **Register**, **Fund**, and **Manage**. Each step will be explained and explored throughout this guide.
 
 ## Connect your wallet
 To start airdropping your tokens, head to [juno.tools](https://test.juno.tools) and connect
@@ -15,20 +17,14 @@ Keplr is a web wallet for interacting with web3 applications in the interchain. 
 :::
 
 :::danger Get some $JUNO!
-To interact with Junotools and airdrop your CW-20 tokens, you'll need $JUNO. You can pick some up on [Osmosis](https://osmosis.zone/).
+To interact with Junotools and airdrop Native or CW-20 tokens, you'll need $JUNO. You can pick some up on [Osmosis](https://osmosis.zone/).
 :::
 
-## Create
-
-Creating an airdrop is seperated into 4 main parts: **Configure**, **Escrow**, **Register**, and **Fund**.
-
-Each step will be explained and explored throughout this guide.
-
-### Configure
+## Configure
 
 Before creating an airdrop, you need to decide on a few things
 
-* **Name**, which will be shown on the [available airdrops page](https://test.juno.tools/airdrops/list/).
+* **Name**, which will be shown on the [available airdrops page](https://juno.tools/airdrops/list/).
 * **CW20 Address** is the address of the cw20 token that will be airdropped.
 * **Start and Expiration time** specifies the starting and ending time of the airdrop. It can either depend on block height, block timestamp, or none of them (immediately). Each of them will be explained in the next section
 * **Accounts File** is a CSV (Comma-Separated Values) file that will contain the addresses and their allocated amount.
@@ -49,7 +45,7 @@ For example, if you want your airdrop to last for a day then you'll need to add 
 
 Every block has a timestamp according to the time it's proposed. You can use the timestamp as an indicator for the airdrop start and expiration times.
 
-Our team has prepared a very simple date choosing interface for a smoother experience.
+Our team has prepared a very simple date-choosing interface for a smoother experience.
 
 ![](/img/airdrop/timestamp.png)
 
@@ -102,7 +98,7 @@ When everything is ready, upload the CSV file.
 
 Uploaded CSV will be prompted to the screen in JSON format, make sure that you uploaded the correct file.
 
-![](/img/airdrop/airdrop-parameters-2.png)
+![](/img/airdrop/csv-example.png)
 
 When you are done, you can press the **Create Airdrop** button to deploy the contract.
 
@@ -110,62 +106,3 @@ When you are done, you can press the **Create Airdrop** button to deploy the con
 Depending on the size of the airdrop, It could take time for your airdrop to process and build a Merkle tree.
 The next version will include an optimized Merkle tree build.
 :::
-
-### Escrow
-
-Before registering the airdrop, you need to deposit some Juno to the Escrow contract. This mechanism is implemented to prevent spam attacks. Your funds will be after you register your airdrop.
-
-After the deposit, you will see all the details about the process of your airdrop.
-
-![](/img/airdrop/escrow-pending.png)
-
-When the escrow deposit process is done you'll the escrow status as **Completed**.
-
-![](/img/airdrop/escrow-deposit.png)
-
-You can proceed by pressing the **Register Airdrop** button.
-
-### Register
-
-Now that the contract is deployed, it can be registered to the JunoTools. You will be directed to the airdrop register page automatically.
-
-Here, you'll finalize the registration of the airdrop and start funding the drop.
-
-![](/img/airdrop/register-airdrop.png)
-
-:::tip
-It's always a good idea to save the contract address manually in case a browser-related issue occurs, so you won't have to deploy the contract again. This way you can manually register and fund your airdrops.
-:::
-
-## Fund
-
-Currently, there is only one way to fund an airdrop
-
-* **Fund with Mint**: Only the creator and/or the minter of the token can fund the airdrop directly from minting.
-
-![](/img/airdrop/fund-airdrop.png)
-
-After the airdrop is funded and the specified start time has passed, the airdrop will be claimable.
-
-![](/img/airdrop/fund-airdrop-complete.png)
-
-## Claim
-
-Now that you successfully started the airdrop, it will be shown on the [Available Airdrops page.](https://test.juno.tools/airdrops/list)
-
-
-
-![](/img/airdrop/available-airdrops.png)
-
-:::tip
-You can search for an airdrop by its name or contract address.
-:::
-
-
-You can see the airdrop you have allocated by checking out the final column.
-
-To claim an airdrop, press the **Claim** button on the same row, followed by pressing **Claim Airdrop** on the directed page.
-
-![](/img/airdrop/claim-airdrop.png)
-
-Congrats! You have successfully learned how to create your airdrop and claim it.
